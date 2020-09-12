@@ -4,6 +4,15 @@
 
 constexpr double EPS = 1e-5;
 
+/**
+ * Checks if computed solutions of quadratic equation are correct
+ * @param a The quadratic coefficient (coefficient a)
+ * @param b The linear coefficient    (coefficient b)
+ * @param c The constant              (coefficient c)
+ * @param n Number of roots
+ * @param x1 1st root
+ * @param x2 2nd root
+ */
 void testEquation(double a, double b, double c, int n, double x1, double x2) {
     double _x1, _x2;
     int _n = getRoots(a, b, c, _x1, _x2);
