@@ -56,7 +56,7 @@ double readDoubleFromConsole(const string &prompt) {
         cout << prompt;
         getline(cin, input);
         match = ValidateDouble(input);
-    } while (!match);
+    } while (!match && cout << "Sorry, your input is not valid.\nPlease try again.\n");
 
     return stod(input);
 }

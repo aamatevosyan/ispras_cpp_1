@@ -23,9 +23,21 @@ constexpr int QES_INF_ROOTS = -1;
  * @param x1 Reference to the 1st root
  * @param x2 Reference to the 2nd root
  * @return Number of roots
- * @note In case of infinite number of roots, returns QES_INF_ROOTS.
+ * @note Normalize coefficients, if it is necessary. In case of infinite number of roots, returns QES_INF_ROOTS.
  */
 int getRoots(double a, double b, double c, double &x1, double &x2);
+
+/**
+ * Solves the quadratic equation \f$ a x^2 + b x + c = 0 \f$
+ * @param a The quadratic coefficient (coefficient a)
+ * @param b The linear coefficient    (coefficient b)
+ * @param c The constant              (coefficient c)
+ * @param x1 Reference to the 1st root
+ * @param x2 Reference to the 2nd root
+ * @return Number of roots
+ * @note In case of infinite number of roots, returns QES_INF_ROOTS.
+ */
+int solveQuadraticEquation(double a, double b, double c, double &x1, double &x2);
 
 /**
  * Check if number is zero
