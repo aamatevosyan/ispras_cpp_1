@@ -54,8 +54,6 @@ First three ones are coefficients of the quadratic equation, the forth one is nu
 
 ### Building in CLion
 
-> **NOTE**: We recommend that you copy file `.idea/workspace.xml.example` into `.idea/workspace.xml` **before starting CLion**. It will provide a good starting point for your project's workspace.
-
 Assuming you've done the above two steps, you can start CLion, and open the project's top level folder. CLion should automatically detect the top level `CMakeLists.txt` file and provide you with the full set of build targets.
 
 Select menu option **Build   ➜ Build Project**, and then **Build ➜ Install**.
