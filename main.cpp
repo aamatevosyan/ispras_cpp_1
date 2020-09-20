@@ -26,7 +26,7 @@ void testEquation(string tag, double a, double b, double c, int n, double x1, do
     if (n == 2 && x1 < x2)
         std::swap(x1, x2);
 
-    if (_n)
+    if (_n > 0)
         assertEquals(tag + ": X1", x1, _x1, EPS);
 
     if (_n > 1)
